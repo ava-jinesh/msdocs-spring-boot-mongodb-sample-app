@@ -33,11 +33,11 @@ jobs:
         name: java-app
         path: '${{ github.workspace }}/target/*.jar'
 
-    - name: Azure WebApp
-      uses: Azure/webapps-deploy@v3
-      with:
-        app-name: webapp-demo
-        package: ${{ github.workspace }}/target/*.jar'
+    # - name: Azure WebApp
+    #   uses: Azure/webapps-deploy@v3
+    #   with:
+    #     app-name: webapp-demo
+    #     package: ${{ github.workspace }}/target/*.jar'
         
   deploy:
     runs-on: ubuntu-latest
