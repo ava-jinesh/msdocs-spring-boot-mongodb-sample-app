@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - starter-no-infra
-  workflow_dispatch:
+  workflow_dispatch:  # This allows manual triggering alongside push events
+
 
 permissions:
       id-token: write
